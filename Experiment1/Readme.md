@@ -27,5 +27,5 @@ System.out.println("Default char values:"+obj.c);
 
 ```
 # output
-![output of primitive] (exp1a.png)
+![output of primitive](exp1a.png)
 
