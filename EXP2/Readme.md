@@ -1,3 +1,4 @@
+![output](https://github.com/user-attachments/assets/5bbebbb3-6e6d-4279-89f9-406fe16b2a04)
 # experiment2
 ## TITLE: 2a.) Implement class mechanism in java 
 ```
@@ -48,6 +49,31 @@ System.out.println("Result of adding three integers: " + sum3);
 ![output](https://github.com/user-attachments/assets/989beb00-37c1-47f9-9103-a7afb9b8179c)
 
 
+
+## TITLE: 2c.) java program implement constructor
+```
+class Student {
+String name;
+int age;
+int marks;
+Student (String n, int a, int m) {
+name = n;
+age = a;
+marks = m;
+}
+void display ( ) {
+System.out.println ("Name: " + name);
+System.out.println ("Age: " + age);
+System.out.println ("Marks: " + marks);
+}
+public static void main(String[] args) {
+Student S1 = new Student ("Alice", 20, 85);
+S1.display ( );
+}
+}
+```
+# output
+![2c output](https://github.com/user-attachments/assets/ac13d350-045e-438c-9bfa-6c11f3692000)
 
 
 
