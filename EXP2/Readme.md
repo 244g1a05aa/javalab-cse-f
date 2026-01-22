@@ -72,7 +72,8 @@ S1.display ( );
 }
 ```
 # output
-<img width="81" height="42" alt="2c ouput" src="https://github.com/user-attachments/assets/3d1b19ec-6566-4067-bfab-542994b53b15" />
+<img width="1470" height="956" alt="output" src="https://github.com/user-attachments/assets/f8b7fed7-5b0f-4b0e-a808-d3678b161051" />
+
 
 
 
