@@ -1,4 +1,3 @@
-![output](https://github.com/user-attachments/assets/5bbebbb3-6e6d-4279-89f9-406fe16b2a04)
 # experiment2
 ## TITLE: 2a.) Implement class mechanism in java 
 ```
@@ -49,7 +48,7 @@ System.out.println("Result of adding three integers: " + sum3);
 ![output](https://github.com/user-attachments/assets/989beb00-37c1-47f9-9103-a7afb9b8179c)
 
 
-
+ # experiment2c
 ## TITLE: 2c.) java program implement constructor
 ```
 class Student {
