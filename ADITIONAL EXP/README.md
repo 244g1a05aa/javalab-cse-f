@@ -60,4 +60,31 @@ public class PalindromeCheck {
 ```
 # output
 <img width="925" height="123" alt="3 output" src="https://github.com/user-attachments/assets/9e220ab9-9232-4d94-8e9f-0a181e1a635b" />
+## TITLE: 4.perfectnum
+```
+import java.util.Scanner;
+
+public class PerfectNumber {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a positive integer: ");
+        int num = sc.nextInt();
+         int sum = 0;
+         for (int i = 1; i <= num - 1; i++) {
+            if (num % i == 0) {
+                sum = sum + i;
+            }
+        }
+        if (sum == num) {
+            System.out.println(num + " is a perfect number");
+        } else {
+            System.out.println(num + " is not a perfect number");
+        }
+
+        sc.close();
+    }
+}
+```
+# output
+<img width="938" height="134" alt="4 perfectnum" src="https://github.com/user-attachments/assets/acf662ed-2a4f-4433-a0bd-39f6273614fe" />
 
