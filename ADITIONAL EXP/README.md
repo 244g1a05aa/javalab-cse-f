@@ -86,5 +86,5 @@ public class PerfectNumber {
 }
 ```
 # output
-<img width="938" height="134" alt="4 perfectnum" src="https://github.com/user-attachments/assets/acf662ed-2a4f-4433-a0bd-39f6273614fe" />
+
 
