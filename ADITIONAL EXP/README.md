@@ -60,6 +60,8 @@ public class PalindromeCheck {
 ```
 # output
 <img width="925" height="123" alt="3 output" src="https://github.com/user-attachments/assets/9e220ab9-9232-4d94-8e9f-0a181e1a635b" />
+
+
 ## TITLE: 4.perfectnum
 ```
 import java.util.Scanner;
