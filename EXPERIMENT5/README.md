@@ -93,3 +93,60 @@ public class TestSort {
 # output
 <img width="624" height="235" alt="5a" src="https://github.com/user-attachments/assets/e8c6de17-6c36-46fd-843b-3fdc92947209" />
 
+
+# EXPERIMENT5b
+## TITLE: To implement runtime polymorphism
+```
+
+import java.util.Scanner;
+
+class Vehicle {
+    public void run() {
+        System.out.println("Vehicle is running");
+    }
+}
+
+class Car extends Vehicle {
+    @Override
+    public void run() {
+        System.out.println("Car is running on four wheels");
+    }
+}
+
+class Bike extends Vehicle {
+    @Override
+    public void run() {
+        System.out.println("Bike is running on two wheels");
+    }
+}
+
+public class TestVehicle {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Vehicle v;
+
+        System.out.println("Choose vehicle type:");
+        System.out.println("1. Car");
+        System.out.println("2. Bike");
+
+        int choice = sc.nextInt();
+
+        if (choice == 1) {
+            v = new Car();
+        } else if (choice == 2) {
+            v = new Bike();
+        } else {
+            v = new Vehicle();
+        }
+
+        v.run();
+        sc.close();
+    }
+}
+```
+
+# output
+<img width="600" height="181" alt="5b" src="https://github.com/user-attachments/assets/264a2325-3d76-4499-bd28-e014a0a2d293" />
+
+
+
