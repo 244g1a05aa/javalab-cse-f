@@ -152,5 +152,70 @@ public class TestThreads {
 ![7b output](https://github.com/user-attachments/assets/e67fca84-aeaa-4d9f-8159-b6d3062b767e)
 
 
+# EXPERIMENT7c
+## TITLE: To implement alive
+```
+
+// Class that simulates a long-running task
+class LongRunningTask extends Thread {
+
+    @Override
+    public void run() {
+        try {
+            System.out.println("Long running task started...");
+
+            // Simulate 5 seconds of work
+            for (int i = 1; i <= 5; i++) {
+                System.out.println("Working... " + i);
+                Thread.sleep(1000);   // 1 second delay
+            }
+
+            System.out.println("Long running task completed!");
+        } catch (InterruptedException e) {
+            System.out.println("Thread was interrupted.");
+        }
+    }
+}
+
+// Main class
+public class ThreadDemo {
+
+    public static void main(String[] args) {
+
+        // Create thread object
+        LongRunningTask task1 = new LongRunningTask();
+
+        // Check isAlive() before starting
+        System.out.println("Before starting task1: " + task1.isAlive());
+
+        // Start the thread
+        task1.start();
+
+        // Check isAlive() after starting
+        System.out.println("After starting task1: " + task1.isAlive());
+
+        try {
+            System.out.println("Main thread waiting for task1 to complete using join()...");
+
+            // Main thread waits for task1 to finish
+            task1.join();
+
+        } catch (InterruptedException e) {
+            System.out.println("Main thread interrupted.");
+        }
+
+        // Check isAlive() after join()
+        System.out.println("After join(): " + task1.isAlive());
+
+        System.out.println("Main thread continues after task1 completed.");
+    }
+}
+
+```
+# output
+![7c output](https://github.com/user-attachments/assets/87791249-f822-4211-a395-aae9d123bcff)
+
+
+
 
 
