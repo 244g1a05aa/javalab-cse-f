@@ -9,14 +9,10 @@ class InvalidCountryException extends Exception {
         super(message);
     }
 }
-// Main Class
 public class UserRegistration {
-
-    // Method to register user
     public void registerUser(String userName, String userCountry)
             throws InvalidCountryException {
-
-        if (!userCountry.equalsIgnoreCase("India")) {
+if (!userCountry.equalsIgnoreCase("India")) {
             // Throw custom exception
             throw new InvalidCountryException(
                     "User outside India cannot be registered");
@@ -39,7 +35,6 @@ public class UserRegistration {
         }
     }
 }
-// First Thread - Prints "Good Morning" every 1 second
 class GoodMorningThread extends Thread {
 
     @Override
@@ -54,11 +49,7 @@ class GoodMorningThread extends Thread {
         }
     }
 }
-
-// Second Thread - Prints "Hello" every 2 seconds
 class HelloThread extends Thread {
-
-    @Override
     public void run() {
         try {
             while (true) {
@@ -70,11 +61,7 @@ class HelloThread extends Thread {
         }
     }
 }
-
-// Third Thread - Prints "Welcome" every 3 seconds
 class WelcomeThread extends Thread {
-
-    @Override
     public void run() {
         try {
             while (true) {
@@ -86,5 +73,9 @@ class WelcomeThread extends Thread {
         }
     }
 }
+
+```
+# output
+![7a output](https://github.com/user-attachments/assets/fe765d0b-f278-4293-8880-7dffc175756a)
 
 
